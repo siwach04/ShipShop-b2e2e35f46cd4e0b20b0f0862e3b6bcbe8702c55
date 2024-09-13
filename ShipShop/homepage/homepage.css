@@ -1,0 +1,258 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    /* background-color: black;
+    color: white; */
+    font-family: "Inter", sans-serif;
+
+}
+.combine{
+    display: flex;
+}
+nav{
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    background-color: aliceblue;
+    border-radius: 7px;
+    height: 100vh;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1;
+    align-content: center;
+}
+nav h2{
+    margin-top: 20px;
+    margin-left: 70px;
+    z-index: 1;
+    color: rgb(15, 15, 15);
+}
+nav ul li{
+    margin-left: 70px;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+header{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(180, 200, 147);
+    z-index: 1;
+}
+#menubutton{
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    padding: 7px;
+}
+#menubutton:hover{
+    background-color: gray;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.logoimg{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logosvg{
+    height: 70px;
+    width: 70px;
+}
+.cart{
+    display: flex;
+    gap: 30px;
+    font-size: large;
+}
+.cart a{
+    font-size: large;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.searchbar{
+    width: 60vw;
+    border: 2px solid black;
+    height: 25px;
+    border-radius: 7px;
+    padding: 2px;
+    padding-left: 8px;
+}
+@keyframes slide-in{
+0%{
+    transform: translateX(-100%);
+}
+100%{
+    transform: translateX(0%)
+}
+}
+@keyframes slide-out{
+    0%{
+        transform: transLateX(0);
+    }
+    100%{
+        transform: transLateX(-100%);
+    }
+}
+#menuslide.active{
+    animation: slide-in 0.3s ease-in-out;
+}
+#menuslide:not(.active){
+    animation: slide-out 0s ease-in-out forwards;
+}
+.border-horizontal{
+    background-color: #dae3f3;
+    width: 100%;
+    height: 7px;
+    margin-top: 80px;
+}
+.combinesection{
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+}
+.leftsection{
+    width: 20%;
+    height: auto;
+}
+.rightsection{
+    width: 80%;
+    height: auto;
+}
+.border-vertical{
+    background-color: #dae3f3;
+    height: 110vh;
+    width: 7px;
+    margin-left: 37px;
+}
+.leftsection h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+}
+.rightsection h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 35px;
+}
+.leftsection ul li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.leftsection ul li a{
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+}
+.leftsection ul li a:hover{
+    text-decoration: underline;
+}
+.biggerbox{
+    display: flex;
+    margin-top: 30px;
+    gap: 38px;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: auto;
+}
+.secondbiggerbox{
+    margin-top: 60px;
+}
+.box{
+    border: 1px solid black;
+    width: 230px;
+    height: 280px;
+    border-radius: 7px;
+    padding: 2px;
+    flex-shrink: 0;
+    text-align: center;
+}
+.imageproduct{
+    width: 230px;
+    height: 280px;
+    border: 7px;
+    object-fit: contain;
+    box-shadow: #dae3f3;
+}
+.product-price{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 4px;
+}
+.product-description{
+    font-size: 17px;
+}
+.border-horizontal-2{
+    margin-top: 0;
+}
+footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color: rgba(33, 33, 33, 1);
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+.content a{
+    font-size: large;
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    
+}
+.content a:hover{
+    text-decoration: underline;
+    padding: 1px;
+}
+.content p{
+    font-size: 35px;
+    z-index: 1;
+    color: rgb(248, 235, 235);
+}
+.content-1{
+    gap: 3px;
+}
+.content-1 span{
+    font-size: 20px;
+    color: wheat;
+}
+.cart a:hover{
+    text-decoration: underline;
+    color: rgb(99, 99, 180);
+}
